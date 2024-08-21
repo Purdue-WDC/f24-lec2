@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div Centering</title>
+    <style>
+      main {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+
+      .container {
+        background-color: hsl(0, 100%, 75%);
+        height: 26rem;
+      }
+
+      .target {
+        background-color: hsl(110, 100%, 75%);
+        width: 2rem;
+        height: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="target"></div>
+      </div>
+      <div class="container">
+        <div class="target"></div>
+      </div>
+      <div class="container">
+        <div>
+          <div class="target"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
